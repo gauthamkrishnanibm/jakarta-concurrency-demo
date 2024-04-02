@@ -8,7 +8,7 @@
 * Contributors:
 *     IBM Corporation - initial API and implementation
 *******************************************************************************/
-package io.openliberty.sample.application;
+package com.example.sample.application;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
