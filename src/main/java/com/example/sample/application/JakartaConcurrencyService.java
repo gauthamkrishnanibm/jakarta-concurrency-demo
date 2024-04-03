@@ -8,7 +8,7 @@
 * Contributors:
 *     IBM Corporation - initial API and implementation
 *******************************************************************************/
-package io.openliberty.sample.application;
+package com.example.sample.application;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -18,27 +18,26 @@ import java.util.concurrent.Future;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
+import jakarta.annotation.Resource;
 import jakarta.enterprise.concurrent.ContextService;
 import jakarta.enterprise.concurrent.ManagedExecutorService;
 import jakarta.enterprise.concurrent.ManagedThreadFactory;
 import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
 @Path("/api")
-@ApplicationScoped
 public class JakartaConcurrencyService {
 
-    @Inject
+    @Resource
     ContextService contextService;
 
-    @Inject
+    @Resource
     ManagedExecutorService managedExecutorService;
 
-    @Inject
+    @Resource
     ManagedThreadFactory managedThreadFactory;
 
 
@@ -103,7 +102,7 @@ public class JakartaConcurrencyService {
             }
           }));
 
-        return "Application context propogated with java.util.concurrent.ExecutorService using jakarta.enterprise.concurrent.ContextService";
+        return "Application context propagated with java.util.concurrent.ExecutorService using jakarta.enterprise.concurrent.ContextService";
     }
 
     
