@@ -17,4 +17,4 @@ From inside the `jakarta-concurrency-demo-main` directory, build and start the a
 
 Once the server has started, the application is available at http://localhost:9080/jakarta-concurrency-demo/
 
-Thus app will demo key features of Jakarta Concurrency - ManagedExecuterService, ContextService and ManagedThreadFactory.
+This app will demo key features of Jakarta Concurrency - ManagedExecuterService, ContextService and ManagedThreadFactory.
