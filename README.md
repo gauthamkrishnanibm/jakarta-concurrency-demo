@@ -15,6 +15,17 @@ From inside the `jakarta-concurrency-demo-main` directory, build and start the a
 ./mvnw liberty:dev
 ```
 
-Once the server has started, the application is available at http://localhost:9080/jakarta-concurrency-demo/
-
 This app will demo key features of Jakarta Concurrency - ManagedExecuterService, ContextService and ManagedThreadFactory.
+
+Once the server has started, 
+
+For ManagedExecuterService
+http://localhost:9080/concurrency/api/managedExecuters
+
+For managedThreads
+http://localhost:9080/concurrency/api/managedThreads
+
+For contextPropagation
+http://localhost:9080/concurrency/api/contextPropagation
+
+
